@@ -1,0 +1,22 @@
+buildscript {
+    apply from: "./gradle/versions.gradle"
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    group 'org.kountersign'
+    version "$kountersign_version"
+}

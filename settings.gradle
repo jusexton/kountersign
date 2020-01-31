@@ -1,0 +1,5 @@
+rootProject.name = 'kountersign'
+
+include 'kountersign-core'
+include 'kountersign-cli'
+
