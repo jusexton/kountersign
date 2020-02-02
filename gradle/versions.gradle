@@ -3,5 +3,7 @@ ext {
 
     kountersign_version = '0.1.0'
 
+    clikt_version = '2.4.0'
+
     junit_jupiter_version = '5.6.0'
 }

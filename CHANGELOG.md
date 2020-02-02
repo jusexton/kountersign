@@ -3,3 +3,4 @@
 - Added initial password generator
   - RandomCharacterPasswordGenerator
   - PassPhraseGenerator
+- Added basic MVP CLI to interface with password generation core
