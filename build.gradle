@@ -20,3 +20,9 @@ allprojects {
     group 'org.kountersign'
     version "$kountersign_version"
 }
+
+subprojects {
+    tasks.withType(Test) {
+        maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+    }
+}
