@@ -97,7 +97,7 @@ ij_java_for_statement_wrap = off
 ij_java_generate_final_locals = false
 ij_java_generate_final_parameters = false
 ij_java_if_brace_force = never
-ij_java_imports_layout = *,|,javax.**,java.**,|,$*
+ij_java_imports_layout = *, |, javax.**, java.**, |, $*
 ij_java_indent_case_from_switch = true
 ij_java_insert_inner_class_imports = false
 ij_java_insert_override_annotation = true
@@ -128,7 +128,7 @@ ij_java_method_parameters_right_paren_on_new_line = false
 ij_java_method_parameters_wrap = off
 ij_java_modifier_list_wrap = false
 ij_java_names_count_to_use_import_on_demand = 3
-ij_java_packages_to_use_import_on_demand = java.awt.*,javax.swing.*
+ij_java_packages_to_use_import_on_demand = java.awt.*, javax.swing.*
 ij_java_parameter_annotation_wrap = off
 ij_java_parentheses_expression_new_line_after_left_paren = false
 ij_java_parentheses_expression_right_paren_on_new_line = false
@@ -243,14 +243,14 @@ ij_editorconfig_space_before_colon = false
 ij_editorconfig_space_before_comma = false
 ij_editorconfig_spaces_around_assignment_operators = true
 
-[{*.bash,*.zsh,*.sh}]
+[{*.bash, *.zsh, *.sh}]
 ij_shell_binary_ops_start_line = false
 ij_shell_keep_column_alignment_padding = false
 ij_shell_minify_program = false
 ij_shell_redirect_followed_by_space = false
 ij_shell_switch_cases_indented = false
 
-[{*.kt,*.gradle.kts,*.kts}]
+[{*.kt, *.gradle.kts, *.kts}]
 ij_kotlin_align_in_columns_case_branch = false
 ij_kotlin_align_multiline_binary_operation = false
 ij_kotlin_align_multiline_extends_list = false
@@ -282,9 +282,9 @@ ij_kotlin_finally_on_new_line = false
 ij_kotlin_if_rparen_on_new_line = true
 ij_kotlin_import_nested_classes = false
 ij_kotlin_insert_whitespaces_in_simple_one_line_method = true
-ij_kotlin_keep_blank_lines_before_right_brace = 2
-ij_kotlin_keep_blank_lines_in_code = 2
-ij_kotlin_keep_blank_lines_in_declarations = 2
+ij_kotlin_keep_blank_lines_before_right_brace = 1
+ij_kotlin_keep_blank_lines_in_code = 1
+ij_kotlin_keep_blank_lines_in_declarations = 1
 ij_kotlin_keep_first_column_comment = true
 ij_kotlin_keep_indents_on_empty_lines = false
 ij_kotlin_keep_line_breaks = true
@@ -327,7 +327,7 @@ ij_kotlin_wrap_elvis_expressions = 1
 ij_kotlin_wrap_expression_body_functions = 1
 ij_kotlin_wrap_first_method_in_call_chain = false
 
-[{*.md,*.mkd,*.markdown}]
+[{*.md, *.mkd, *.markdown}]
 ij_markdown_abbreviations_placement = 0
 ij_markdown_abbreviations_sort = 0
 ij_markdown_attribute_class = 0
@@ -400,7 +400,9 @@ ij_markdown_toc_generate_numbered_list = false
 ij_markdown_toc_generate_structure = 0
 ij_markdown_toc_generate_text_only = false
 ij_markdown_toc_heading_levels = 12
-ij_markdown_toc_title = Table of Contents
+ij_markdown_toc_title = Table
+of
+Contents
 ij_markdown_toc_title_level = 1
 ij_markdown_toc_update_on_doc_format = 1
 ij_markdown_unescape_special_chars_on_wrap = true

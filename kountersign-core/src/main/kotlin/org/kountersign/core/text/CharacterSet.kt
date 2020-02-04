@@ -8,7 +8,6 @@ package org.kountersign.core.text
 @JvmField
 val LOWER_CASE: Set<Char> = "abcdefghijklmnopqrstuvwxyz".toSet()
 
-
 /**
  * All upper case english letters.
  *
@@ -17,7 +16,6 @@ val LOWER_CASE: Set<Char> = "abcdefghijklmnopqrstuvwxyz".toSet()
 @JvmField
 val UPPER_CASE: Set<Char> = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toSet()
 
-
 /**
  * All english letters.
  *
@@ -25,7 +23,6 @@ val UPPER_CASE: Set<Char> = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toSet()
  */
 @JvmField
 val LETTERS = LOWER_CASE union UPPER_CASE
-
 
 /**
  * All digits
