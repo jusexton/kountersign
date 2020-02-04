@@ -129,6 +129,9 @@ data class DigitPlacementStrategy(
     }
 }
 
+/**
+ * Creates password generator instance from [this] digit placement strategy instance
+ */
 fun DigitPlacementStrategy.asPasswordGenerator(): CharacterPasswordGenerator {
     // Adding 48 to give the integer ascii value.
     // This value can then be correctly converted to a character representing that single digit value

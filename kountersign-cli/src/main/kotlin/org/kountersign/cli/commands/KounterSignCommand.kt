@@ -9,6 +9,7 @@ class KounterSignCommand : CliktCommand(
     help = KounterSignCommand::class.java.getResource("/logo.txt").readText()
 ) {
     init {
+        // TODO: In Clikt 2.5.0 this will be able to be removed.
         context { helpFormatter = CliktHelpFormatter(width = 1000) }
     }
 
