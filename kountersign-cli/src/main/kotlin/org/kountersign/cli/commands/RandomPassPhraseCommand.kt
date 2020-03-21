@@ -8,10 +8,7 @@ import org.kountersign.core.generator.DigitPlacementPattern
 import org.kountersign.core.generator.DigitPlacementStrategy
 import org.kountersign.core.generator.RandomPassPhraseGenerator
 
-class RandomPassPhraseCommand : CliktCommand(
-    name = "passphrase",
-    help = RandomPassPhraseCommand::class.java.getResource("/logo.txt").readText()
-) {
+class RandomPassPhraseCommand : CliktCommand(name = "passphrase") {
     private val words by option(
         "-w",
         "--words",
@@ -63,7 +60,7 @@ class RandomPassPhraseCommand : CliktCommand(
         "-u",
         "--unique",
         help = "Denotes whether generated digit groups should be the same or unique"
-    ).flag(default = true)
+    ).flag(default = false)
 
     private val digitCount by option(
         "-d",

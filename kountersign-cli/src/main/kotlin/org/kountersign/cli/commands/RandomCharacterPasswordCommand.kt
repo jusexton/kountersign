@@ -13,10 +13,7 @@ import com.github.ajalt.clikt.parameters.types.int
 import org.kountersign.core.generator.RandomCharacterPasswordGenerator
 import org.kountersign.core.text.*
 
-class RandomCharacterPasswordCommand : CliktCommand(
-    name = "random",
-    help = RandomCharacterPasswordCommand::class.java.getResource("/logo.txt").readText()
-) {
+class RandomCharacterPasswordCommand : CliktCommand(name = "random") {
     private val characterSetChoices = mapOf(
         "lower" to LOWER_CASE,
         "upper" to UPPER_CASE,
