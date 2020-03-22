@@ -10,16 +10,11 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform {
-        // exclude('**/*$Performance*')
-    }
+    useJUnitPlatform()
 
     systemProperties = [
             'junit.jupiter.testinstance.lifecycle.default': 'per_class'
     ]
-
-    // exclude '**/*PerformanceTest.class'
-    // exclude '**/*$*Performance*'
 }
 
 tasks.withType(Test) { Test task ->
