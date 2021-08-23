@@ -4,6 +4,12 @@ import org.kountersign.core.ext.randomSequence
 import org.kountersign.core.text.ALL
 
 /**
+ * @author Justin Sexton
+ * @since 0.1.0
+ */
+interface CharacterPasswordGenerator : PasswordSequenceGenerator
+
+/**
  * Password generator at a character level. Generates password based on given characters and a specific length.
  *
  * @author Justin Sexton
@@ -39,6 +45,4 @@ class OneTimeRandomCharacterPasswordGenerator(
     private val cache: String = super.generate()
 
     override fun generate(): String = cache
-
-    override fun generateSequence(): Sequence<String> = generateSequence { generate() }
 }

@@ -3,6 +3,12 @@ package org.kountersign.core.generator
 import org.kountersign.core.ext.randomSequence
 
 /**
+ * @author Justin Sexton
+ * @since 0.1.0
+ */
+interface PassPhraseGenerator : PasswordSequenceGenerator
+
+/**
  * Password generator at a string level. Generates password based on given words and a specific word count.
  * Also capable of injecting digits around words based on a given [digitPlacementStrategy].
  *

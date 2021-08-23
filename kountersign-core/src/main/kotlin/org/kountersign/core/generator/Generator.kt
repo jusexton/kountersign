@@ -29,15 +29,3 @@ interface PasswordGenerator {
 interface PasswordSequenceGenerator : PasswordGenerator, SequenceGenerator<String> {
     override fun generateSequence(): Sequence<String> = generateSequence { generate() }
 }
-
-/**
- * @author Justin Sexton
- * @since 0.1.0
- */
-interface CharacterPasswordGenerator : PasswordSequenceGenerator
-
-/**
- * @author Justin Sexton
- * @since 0.1.0
- */
-interface PassPhraseGenerator : PasswordSequenceGenerator
